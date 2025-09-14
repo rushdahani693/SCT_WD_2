@@ -1,0 +1,119 @@
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #f2ede5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #4a3c31;
+  background-image: repeating-radial-gradient(circle at center, #d6cbb8 0, #e5dfd3 1px, #f2ede5 2px, #f2ede5 10px);
+}
+
+.stopwatch {
+  background: #f7f1e7;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(102, 84, 57, 0.3);
+  padding: 40px 50px;
+  width: 350px;
+  text-align: center;
+  border: 3px solid #a88d6d;
+}
+
+.heading {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #6b5844;
+  margin-bottom: 15px;
+  user-select: none;
+  text-shadow: 1px 1px 0 #d6cbb8;
+}
+
+.time-display {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #6b5844;
+  text-shadow: 1px 1px 0 #d6cbb8;
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+
+.buttons {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #a88d6d;
+  border: 2px solid #6b5844;
+  color: #f2ede5;
+  padding: 12px 22px;
+  margin: 0 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: inset 0 1px 0 #d6cbb8, 0 3px 6px rgba(102, 84, 57, 0.4);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'EB Garamond', serif;
+  user-select: none;
+}
+
+button:hover:not(:disabled) {
+  background: #6b5844;
+  color: #f7f1e7;
+  border-color: #a88d6d;
+  box-shadow: inset 0 1px 0 #f7f1e7, 0 4px 10px rgba(168, 141, 109, 0.6);
+}
+
+button:disabled {
+  background: #d6cbb8;
+  border-color: #e5dfd3;
+  color: #b1a88b;
+  cursor: default;
+  box-shadow: none;
+}
+
+.laps {
+  max-height: 170px;
+  overflow-y: auto;
+  border-top: 2px solid #a88d6d;
+  padding-top: 18px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5c4e3a;
+  background-color: #f4efe5;
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px #e5dfd3;
+  font-family: 'EB Garamond', serif;
+  user-select: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.laps h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #6b5844;
+  border-bottom: 1px solid #a88d6d;
+  padding-bottom: 6px;
+}
+
+.lap-item {
+  padding: 8px 6px;
+  border-bottom: 1px solid #e5dfd3;
+  font-variant-numeric: tabular-nums;
+  font-family: 'EB Garamond', serif;
+}
+
+.lap-item:last-child {
+  border-bottom: none;
+}
