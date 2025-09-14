@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vintage Stopwatch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="stopwatch">
+    <h1 class="heading">Stopwatch</h1>
+    <div class="time-display" id="time">00:00:00.000</div>
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="lapBtn" disabled>Lap</button>
+      <button id="resetBtn" disabled>Reset</button>
+    </div>
+    <div class="laps" id="laps">
+      <h3>Laps</h3>
+      <div id="lapList"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
